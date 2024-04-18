@@ -1,18 +1,21 @@
 {
   "name": "tailwind-course-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Tailwind CSS project setup for deployment on Netlify.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "start": "serve ./dist"
   },
   "author": "Jameel-WebDev",
   "license": "ISC",
   "devDependencies": {
     "prettier": "^2.7.1",
     "prettier-plugin-tailwindcss": "^0.1.13",
-    "tailwindcss": "^3.1.8"
+    "tailwindcss": "^3.1.8",
+    "serve": "^13.0.2"
   },
   "dependencies": {
     "@check-light-or-dark/color": "^1.0.3",
